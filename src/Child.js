@@ -1,15 +1,18 @@
 import React from "react";
-import GrandChild from"./GrandChild"
+import Grandchild from"./Grandchild"
 
 
 
-function Child (){
+function Child ({handleChildClick, handleGrandchildClick}){
 
 
     return (
 
         <div> 
-            <GrandChild /> Child
+            <button onClick={handleChildClick} >Child button</button>
+            <br/>
+            <br/>
+            <Grandchild handleGrandchildClick={handleGrandchildClick} />
         </div>
 
     );
